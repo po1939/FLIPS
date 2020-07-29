@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:FLIPS" x:Class="FLIPS.FLIPSPage">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="5*"/>
+           
+        </Grid.ColumnDefinitions>
+
+    
+       
+        <Label Text="FLIPS"
+                Grid.Row="1"
+               Grid.ColumnSpan="6"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="64"
+               TextColor="#AEEADD"
+               FontFamily="Caviar Dreams"
+               FontAttributes="Bold"
+               />
+
+        <!-- First Line -->
+        <Image x:Name="c00" 
+               Source="back.jpg"
+               Grid.Row="2"
+               Grid.Column="1"
+
+               />
+        <Button x:Name="b00"
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="00"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image x:Name="c01"
+                Source="back.jpg"
+               Grid.Row="2"
+               Grid.Column="2"
+               />
+        <Button x:Name="b01"
+                Grid.Row="2"
+                Grid.Column="2"
+                Text="01"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image  x:Name="c02"
+                Source="back.jpg"
+               Grid.Row="2"
+               Grid.Column="3"/>
+        <Button x:Name="b02"
+                Grid.Row="2"
+                Grid.Column="3"
+                Text="02"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image x:Name="c03"
+                Source="back.jpg"
+               Grid.Row="2"
+               Grid.Column="4"/>
+        <Button x:Name="b03"
+                Grid.Row="2"
+                Grid.Column="4"
+                Text="03"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+
+        <!-- Second Line -->
+        <Image x:Name="c10"
+                Source="back.jpg"
+               Grid.Row="3"
+               Grid.Column="1"/>
+        <Button x:Name="b10"
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="10"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image x:Name="c11"
+                Source="back.jpg"
+               Grid.Row="3"
+               Grid.Column="2"/>
+        <Button x:Name="b11"
+                Grid.Row="3"
+                Grid.Column="2"
+                Text="11"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image x:Name="c12"
+            Source="back.jpg"
+               Grid.Row="3"
+               Grid.Column="3"/>
+        <Button x:Name="b12"
+                Grid.Row="3"
+                Grid.Column="3"
+                Text="12"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image x:Name="c13"
+                Source="back.jpg"
+               Grid.Row="3"
+               Grid.Column="4"/>
+        <Button x:Name="b13"
+                Grid.Row="3"
+                Grid.Column="4"
+                Text="13"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+
+        <!-- Third Line -->
+        <Image x:Name="c20"
+                Source="back.jpg"
+               Grid.Row="4"
+               Grid.Column="1"/>
+        <Button x:Name="b20"
+                Grid.Row="4"
+                Grid.Column="1"
+                Text="20"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image x:Name="c21"
+                Source="back.jpg"
+               Grid.Row="4"
+               Grid.Column="2"/>
+        <Button x:Name="b21"
+                Grid.Row="4"
+                Grid.Column="2"
+                Text="21"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image x:Name="c22"
+                Source="back.jpg"
+               Grid.Row="4"
+               Grid.Column="3"/>
+        <Button x:Name="b22"
+                Grid.Row="4"
+                Grid.Column="3"
+                Text="22"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+        
+        <Image x:Name="c23"
+                Source="back.jpg"
+               Grid.Row="4"
+               Grid.Column="4"/>
+        <Button x:Name="b23"
+                Grid.Row="4"
+                Grid.Column="4"
+                Text="23"
+                FontSize="0.1"
+                TextColor="Transparent"
+                Clicked="Handle_Clicked"/>
+
+
+        <Label
+            x:Name="timeLabel"
+            Grid.Row="5"
+            Grid.Column="1"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontFamily="Alternate Gothic No1 D"
+            FontSize="30">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span x:Name="timeText" Text="100" ForegroundColor="#FF7BD4"/>
+                    <Span Text=" s"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        <Label
+            Grid.Row="5"
+            Grid.Column="4"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontFamily="Alternate Gothic No1 D"
+            FontSize="30">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span x:Name = "flipText" Text="0" ForegroundColor="#FF7BD4"/>
+                    <Span Text=" flips"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        <Button Grid.Row="5"
+               Grid.Column="2"
+               Grid.ColumnSpan="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="30"
+               Image="restart-button.png"
+               WidthRequest="100"
+               Clicked="Handle_Clicked_1"/>
+        
+    </Grid>
+    
+</ContentPage>
